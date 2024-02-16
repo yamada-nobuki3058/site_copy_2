@@ -1,0 +1,217 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "游ゴシック","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-weight: 700;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.85;
+    transition: 8ms;
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 36px;
+    box-shadow: 0px 15px 20px 0px rgba(0,0,0,.05);
+    z-index: 0;
+}
+
+ul li {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.header_lists{
+    display: flex;
+    justify-content: space-between;
+    width: 670px;
+    line-height: 14px;
+    font-family: "Lato",sans-serif;
+}
+.header_list_en{
+    font-size: 12px;
+    color: #333333;
+}
+.header_list_ja{
+    font-size: 10px;
+    color: #333333;
+}
+.header_logo a{
+    height: 20px;
+    width: 185px;
+}
+.header_logo img{
+    height: 20px;
+    width: auto;
+}
+.counseling_button{
+    height: 40px;
+    width: 150px;
+    border-radius: 38px;
+    background-color: orange;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+}
+.main_top{
+    height: 670px;
+    position: relative;
+    overflow: hidden;
+}
+.main_top_background_1{
+    position: absolute;
+    top: -70px;
+    left: 0;
+    z-index: -2;
+}
+.main_top_background_2{
+    width: 520px;
+    height: 520px;
+    position: absolute;
+    top: 85px;
+    left: -60px;
+}
+.main_top_background_3{
+    height: 640px;
+    position: absolute;
+    top: -70px;
+    right: 0;
+    z-index: -2;
+}
+.main_top_background_4{
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.main_top_contents{
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-top: 219px;
+    position: relative;
+}
+.main_top_title{
+    font-size: 42px;
+    font-family: "Lato",sans-serif;
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.main_top_counseling_button{
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+    background-color: orange;
+    height: 64px;
+    width: 488px;
+    border-radius: 32px;
+}
+.main_top_comments{
+    font-size: 12px;
+    text-align: 14px;
+    font-family: "游ゴシック";
+    font-weight: 500;
+    color: #333;
+}
+.main_top_no1{
+    position: absolute;
+    top: 25%;
+    left: 450px;
+}
+@media only screen and (min-width: 768px){
+    .main_top_background_mini{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1080px){
+    .header_lists{
+        display: none;
+    }
+    .hamburger {
+        width: 24px;
+        height: 25px;
+        display: flex;
+        flex-flow: column;
+        justify-content:space-around;
+    }
+    .hamburger span{
+        height: 2px;
+        width: 100%;
+        background-color: #a2a2a4;
+    } 
+    .header{
+        position: fixed !important;
+        box-sizing: border-box;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    .main_top{
+        margin-top: 70px;
+        overflow: visible;
+    }
+    .main_top_contents{
+        margin-left: 37px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .header_logo img{
+        height: 16px;
+        width: 148.5px;
+    }
+    .header{
+        padding: 0 18px;
+    }
+    .main_top{
+        margin-top: 70px;
+        overflow: visible;
+    }
+    .main_top_background_1{
+        display: none;
+    }
+    .main_top_background_2{
+        display: none;
+    }
+    .main_top_background_3{
+        display: none;
+    }
+    .main_top_background_4{
+        display: none;
+    }
+    .main_top_background_mini{
+        width: 100%;
+        margin-top: -20px;
+    }
+    .main_top_contents{
+        width: 520px;
+        margin: 0 15px;
+        padding: 0;
+    }
+    .main_top_title{
+        font-size: 22px;
+        font-family: "Lato";
+    }
+    .main_top_counseling{
+        width: 500px;
+    }
+    .main_top_comments{
+        font-size: 12px;
+    }
+    .main_top_no1{
+        width: 105px;
+        top: -10px;
+        left: 300px;
+    }
+}
